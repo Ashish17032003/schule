@@ -10,7 +10,7 @@ const Body = () => {
 
   return (
     <>
-      <div className="flex flex-row justify-center items-center m-5">
+      <div className="flex flex-row justify-center items-center py-32 bg-gradient-to-tr from-[#b5c0ff] via-[#7b5cc5] to-[#560a88]">
         <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-tr from-blue-300 via-blue-400 to-blue-500 text-white shadow-lg">
           <Tabs aria-label="Options">
             <Tab
@@ -67,7 +67,7 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 mb-6">
         <CarouselCustom />
         <div className="ml-4 flex flex-col justify-center">
           <p className="text-center">

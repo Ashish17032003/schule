@@ -1,13 +1,13 @@
-import Body from "../components/Body"
-import NavbarLanding from "../components/NavbarLanding"
+import Body from "../components/Body";
+import NavbarLanding from "../components/NavbarLanding";
 
 const Landing = () => {
   return (
-    <div>
-        <NavbarLanding/>
-        <Body/>
-    </div>
-  )
-}
+    <>
+      <NavbarLanding />
+      <Body />
+    </>
+  );
+};
 
-export default Landing
+export default Landing;
