@@ -1,5 +1,4 @@
 import { Input } from "@nextui-org/react";
-// import { SearchIcon } from "./SearchIcon";
 import { Tabs, Tab } from "@nextui-org/react";
 import { SearchIcon } from "./SearchIcon";
 import { useState } from "react";
@@ -12,27 +11,11 @@ const Body = () => {
     <>
       <div className="flex flex-row justify-center items-center py-32 bg-gradient-to-tr from-[#b5c0ff] via-[#7b5cc5] to-[#560a88]">
         <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-tr from-blue-300 via-blue-400 to-blue-500 text-white shadow-lg">
-          <Tabs aria-label="Options">
-            <Tab
-              onClick={() => setText("Day School")}
-              key="daySchool"
-              title="Day School"
-            ></Tab>
-            <Tab
-              onClick={() => setText("Boarding School")}
-              key="boardingSchool"
-              title="Boarding School"
-            ></Tab>
-            <Tab
-              onClick={() => setText("Day Boarding School")}
-              key="dayBoardingSchool"
-              title="Day Boarding School"
-            ></Tab>
-            <Tab
-              onClick={() => setText("Play School")}
-              key="playSchool"
-              title="Play School"
-            ></Tab>
+          <Tabs aria-label="Options" selectedKey={text} onSelectionChange={setText}>
+            <Tab key="Day School" title="Day School"></Tab>
+            <Tab key="Boarding School" title="Boarding School"></Tab>
+            <Tab key="Day Boarding School" title="Day Boarding School"></Tab>
+            <Tab key="Play School" title="Play School"></Tab>
           </Tabs>
           <Input
             label="Search"
