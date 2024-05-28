@@ -2,20 +2,22 @@ import { Input } from "@nextui-org/react";
 // import { SearchIcon } from "./SearchIcon";
 import { Tabs, Tab } from "@nextui-org/react";
 import { SearchIcon } from "./SearchIcon";
-// import { useState } from "react";
+import { useState } from "react";
+import CarouselCustom from "./CarouselCustom";
 
 const Body = () => {
-  // const [tab, setTab] = useState("daySchool");
+  
+    const [text, setText] = useState("Day School")
 
   return (
     <>
       <div className="flex flex-row justify-center items-center m-5">
         <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
           <Tabs aria-label="Options">
-            <Tab key="daySchool" title="Day School"></Tab>
-            <Tab key="boardingSchool" title="Boarding School"></Tab>
-            <Tab key="dayBoardingSchool" title="Day Boarding School"></Tab>
-            <Tab key="playSchool" title="Play School"></Tab>
+            <Tab onClick={() => setText('Day School')} key="daySchool" title="Day School"></Tab>
+            <Tab onClick={() => setText('Boarding School')} key="boardingSchool" title="Boarding School"></Tab>
+            <Tab onClick={() => setText('Day Boarding School')} key="dayBoardingSchool" title="Day Boarding School"></Tab>
+            <Tab onClick={() => setText('Play School')} key="playSchool" title="Play School"></Tab>
           </Tabs>
           <Input
             label="Search"
@@ -42,13 +44,17 @@ const Body = () => {
                 "!cursor-text",
               ],
             }}
-            placeholder="Type to search..."
+            placeholder= {text}
             startContent={
               <SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none flex-shrink-0" />
             }
           />
         </div>
       </div>
+
+        <div className="m-10">
+            <CarouselCustom/>
+        </div>
     </>
   );
 };
