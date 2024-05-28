@@ -3,9 +3,9 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 const NavbarLanding = () => {
     return (
         <>
-            <Navbar>
+            <Navbar maxWidth="full">
                 <NavbarBrand>
-                    <div >
+                    <div className="w-40" >
                         <img src='/logoFormsDuniya.jpg' />
                     </div>
                 </NavbarBrand>

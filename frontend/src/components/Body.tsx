@@ -6,18 +6,33 @@ import { useState } from "react";
 import CarouselCustom from "./CarouselCustom";
 
 const Body = () => {
-  
-    const [text, setText] = useState("Day School")
+  const [text, setText] = useState("Day School");
 
   return (
     <>
       <div className="flex flex-row justify-center items-center m-5">
-        <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
+        <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-tr from-blue-300 via-blue-400 to-blue-500 text-white shadow-lg">
           <Tabs aria-label="Options">
-            <Tab onClick={() => setText('Day School')} key="daySchool" title="Day School"></Tab>
-            <Tab onClick={() => setText('Boarding School')} key="boardingSchool" title="Boarding School"></Tab>
-            <Tab onClick={() => setText('Day Boarding School')} key="dayBoardingSchool" title="Day Boarding School"></Tab>
-            <Tab onClick={() => setText('Play School')} key="playSchool" title="Play School"></Tab>
+            <Tab
+              onClick={() => setText("Day School")}
+              key="daySchool"
+              title="Day School"
+            ></Tab>
+            <Tab
+              onClick={() => setText("Boarding School")}
+              key="boardingSchool"
+              title="Boarding School"
+            ></Tab>
+            <Tab
+              onClick={() => setText("Day Boarding School")}
+              key="dayBoardingSchool"
+              title="Day Boarding School"
+            ></Tab>
+            <Tab
+              onClick={() => setText("Play School")}
+              key="playSchool"
+              title="Play School"
+            ></Tab>
           </Tabs>
           <Input
             label="Search"
@@ -44,7 +59,7 @@ const Body = () => {
                 "!cursor-text",
               ],
             }}
-            placeholder= {text}
+            placeholder={text}
             startContent={
               <SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none flex-shrink-0" />
             }
@@ -52,9 +67,19 @@ const Body = () => {
         </div>
       </div>
 
-        <div className="m-10">
-            <CarouselCustom/>
+      <div className="flex justify-center mt-10">
+        <CarouselCustom />
+        <div className="ml-4 flex flex-col justify-center">
+          <p className="text-center">
+            Sign Up and apply to schools of your choice with a{" "}
+            <span className="font-semibold">Common Application Form</span>
+          </p>
+          <br />
+          <p className="text-center">
+            We will help you discover the best schools for your child.
+          </p>
         </div>
+      </div>
     </>
   );
 };
