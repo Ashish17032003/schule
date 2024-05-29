@@ -42,7 +42,7 @@ const Testimonial = () => {
     ]
 
     return (
-        <div className="my-20 py-6 bg-yellow-950">
+        <div className="mt-20 py-6 bg-yellow-950">
             <Carousel responsive={responsive} showDots={true} infinite={true} autoPlay={true} autoPlaySpeed={2000}>
                 {cardData.map((card, index) => (
                     <div key={index} className="flex flex-row justify-center items-center w-screen my-10">
