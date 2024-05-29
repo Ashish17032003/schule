@@ -26,24 +26,18 @@ const Testimonial = () => {
     const cardData = [
         {
             name: "Hatching Dragons",
-            handle: "@DragonNurseries",
-            content: "Biscuits are more than just a tasty treat for our children - they actually play a significant role in their early years stages and developments, offering various benefits.",
-            following: '3k',
-            follower: '1k'
+            text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quaerat nemo iste excepturi facilis, deleniti inventore eum quasi nisi. Iure quibusdam, omnis, provident earum eum eveniet temporibus placeat vitae quaerat incidunt error, mollitia doloremque commodi reprehenderit. Ex deleniti provident minus exercitationem facere excepturi, sapiente temporibus debitis asperiores earum porro molestias?",
+            image: "Biscuits are more than just a tasty treat for our children - they actually play a significant role in their early years stages and developments, offering various benefits.",
         },
         {
             name: "Hatching Dragons",
-            handle: "@DragonNurseries",
-            content: "Young children sleep so much due to learning, rather than rest.",
-            following: '3k',
-            follower: '1k'
+            text: "@DragonNurseries",
+            image: "Biscuits are more than just a tasty treat for our children - they actually play a significant role in their early years stages and developments, offering various benefits.",
         },
         {
             name: "Hatching Dragons",
-            handle: "@DragonNurseries",
-            content: "Young children learn different languages incredibly well.",
-            following: '3k',
-            follower: '1k'
+            text: "@DragonNurseries",
+            image: "Biscuits are more than just a tasty treat for our children - they actually play a significant role in their early years stages and developments, offering various benefits.",
         }
     ]
 
@@ -52,7 +46,7 @@ const Testimonial = () => {
             <Carousel responsive={responsive} showDots={true} infinite={true} autoPlay={true} autoPlaySpeed={2000}>
                 {cardData.map((card, index) => (
                     <div key={index} className="flex flex-row justify-center items-center w-screen my-10">
-                        <CardTestimonial name={card.name} handle={card.handle} content={card.content} follower={card.follower} following={card.following} />
+                        <CardTestimonial name={card.name} text={card.text} image={card.image}/>
                     </div>
                 ))}
             </Carousel>
