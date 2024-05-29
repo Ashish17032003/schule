@@ -1,7 +1,7 @@
 import "react-multi-carousel/lib/styles.css";
 import { Image } from "@nextui-org/image";
 
-const CarouselCustom = () => {
+const City = () => {
   return (
     <>
       <Image
@@ -15,4 +15,4 @@ const CarouselCustom = () => {
   );
 };
 
-export default CarouselCustom;
+export default City;

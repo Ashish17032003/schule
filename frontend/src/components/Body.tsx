@@ -1,8 +1,8 @@
 import { Input } from "@nextui-org/react";
 import { Tabs, Tab } from "@nextui-org/react";
 import { SearchIcon } from "./SearchIcon";
-import { useState } from "react";
-import CarouselCustom from "./CarouselCustom";
+import { Key, useState } from "react";
+import City from "./City";
 
 const Body = () => {
   const [text, setText] = useState("Day School");
@@ -11,7 +11,7 @@ const Body = () => {
     <>
       <div className="flex flex-row justify-center items-center py-32 bg-gradient-to-tr from-[#b5c0ff] via-[#7b5cc5] to-[#560a88]">
         <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-tr from-blue-300 via-blue-400 to-blue-500 text-white shadow-lg">
-          <Tabs aria-label="Options" selectedKey={text} onSelectionChange={setText}>
+          <Tabs aria-label="Options" selectedKey={text} onSelectionChange={(key: Key) => setText(key.toString())}>
             <Tab key="Day School" title="Day School"></Tab>
             <Tab key="Boarding School" title="Boarding School"></Tab>
             <Tab key="Day Boarding School" title="Day Boarding School"></Tab>
@@ -51,7 +51,7 @@ const Body = () => {
       </div>
 
       <div className="flex justify-center mt-10 mb-6">
-        <CarouselCustom />
+        <City />
         <div className="ml-4 flex flex-col justify-center">
           <p className="text-center">
             Sign Up and apply to schools of your choice with a{" "}
