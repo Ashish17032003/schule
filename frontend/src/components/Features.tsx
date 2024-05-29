@@ -29,7 +29,7 @@ const Features = () => {
   return (
     <>
       <div className="flex flex-row justify-center items-center m-10">
-        <div className="w-2/5">
+        <div className="w-2/5 p-4">
           <p className="text-4xl">Strategies to maintain a competitive edge</p>
         </div>
         <div className="flex flex-row w-3/5">
