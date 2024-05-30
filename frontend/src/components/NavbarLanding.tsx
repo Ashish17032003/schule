@@ -12,7 +12,7 @@ const NavbarLanding = () => {
     <>
       <Navbar
         maxWidth="full"
-        className="bg-[#F8F4E1]"
+        className="bg-[#669BBB]"
       >
         <NavbarBrand>
           <div className="w-40">
@@ -22,22 +22,24 @@ const NavbarLanding = () => {
         <NavbarContent justify="end">
           <NavbarItem>
             {/* <p className="text-white">Explore </p> */}
-            <Link href="#">Explore Schools</Link>
+            <Link className="text-white font-semibold" href="#">Explore Schools</Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#">Boarding Schools</Link>
+            <Link className="text-white font-semibold" href="#">Boarding Schools</Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#">Admission Tracker</Link>
+            <Link className="text-white font-semibold" href="#">Admission Tracker</Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#">Compare Schools</Link>
+            <Link className="text-white font-semibold" href="#">Compare Schools</Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="flat">
-              Sign Up
+            <Button className="bg-slate-900" as={Link} color="default" href="#" variant="flat">
+              <span className="text-white font-semibold">
+                Sign Up
+              </span>
             </Button>
           </NavbarItem>
         </NavbarContent>
