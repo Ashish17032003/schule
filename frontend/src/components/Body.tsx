@@ -10,8 +10,12 @@ const Body = () => {
   return (
     <>
       <div className="flex flex-row justify-center items-center py-32 bg-gradient-to-tr from-[#b5c0ff] via-[#7b5cc5] to-[#560a88]">
-        <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-tr from-blue-300 via-blue-400 to-blue-500 text-white shadow-lg">
-          <Tabs aria-label="Options" selectedKey={text} onSelectionChange={(key: Key) => setText(key.toString())}>
+        <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-tr from-blue-200 via-blue-300 to-[#669BBB] text-white shadow-lg">
+          <Tabs
+            aria-label="Options"
+            selectedKey={text}
+            onSelectionChange={(key: Key) => setText(key.toString())}
+          >
             <Tab key="Day School" title="Day School"></Tab>
             <Tab key="Boarding School" title="Boarding School"></Tab>
             <Tab key="Day Boarding School" title="Day Boarding School"></Tab>
