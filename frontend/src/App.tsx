@@ -1,10 +1,11 @@
-import Landing from "./pages/Landing"
+import AppRoutes from "./Routes"
+// import Landing from "./pages/Landing"
 
 function App() {
 
   return (
     <>
-      <Landing/>
+      <AppRoutes/>
     </>
   )
 }
