@@ -28,9 +28,9 @@ const Features = () => {
 
   return (
     <>
-      <div className="flex flex-row justify-center items-center m-10">
+      <div className="flex flex-row justify-center items-center p-10 bg-[#F0F5F8]">
         <div className="w-2/5 p-4">
-          <p className="text-4xl">Strategies to maintain a competitive edge</p>
+          <p className="text-4xl text-center text-[#002F49] font-bold">Strategies to maintain a competitive edge</p>
         </div>
         <div className="flex flex-row w-3/5">
           {list.map((item, index) => (

@@ -2,7 +2,7 @@ import { Card, CardHeader, CardBody, CardFooter, Avatar } from "@nextui-org/reac
 
 const CardFacts = (props: any) => {
     return (
-        <Card className="bg-black max-w-[340px] h-[160px] z-50 shadow-2xl">
+        <Card className="bg-black max-w-[340px] h-[160px] z-50">
             <CardHeader className="justify-between">
                 <div className="flex gap-5">
                     <Avatar isBordered radius="full" size="md" src="https://nextui.org/avatars/avatar-1.png" />

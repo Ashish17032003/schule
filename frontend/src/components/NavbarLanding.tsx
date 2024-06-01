@@ -12,7 +12,7 @@ const NavbarLanding = () => {
     <>
       <Navbar
         maxWidth="full"
-        className="bg-[#669BBB]"
+        className="bg-[#10203C]"
       >
         <NavbarBrand>
           <div className="w-40">
@@ -36,9 +36,9 @@ const NavbarLanding = () => {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem>
-            <Button className="bg-slate-900" as={Link} color="default" href="#" variant="flat">
+            <Button className="bg-blue-500" as={Link} color="default" href="#" variant="flat">
               <span className="text-white font-semibold">
-                Sign Up
+                Login
               </span>
             </Button>
           </NavbarItem>

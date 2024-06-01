@@ -1,4 +1,4 @@
-import { Input } from "@nextui-org/react";
+import { Button, Input } from "@nextui-org/react";
 import { Tabs, Tab } from "@nextui-org/react";
 import { SearchIcon } from "./SearchIcon";
 import { Key, useState } from "react";
@@ -9,8 +9,8 @@ const Body = () => {
 
   return (
     <>
-      <div className="flex flex-row justify-center items-center py-32 bg-gradient-to-tr from-[#b5c0ff] via-[#7b5cc5] to-[#560a88]">
-        <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-tr from-blue-200 via-blue-300 to-[#669BBB] text-white shadow-lg">
+      <div className="flex flex-row justify-center items-center py-32 bg-[url('/background/9.png')] bg-cover">
+        <div className="w-[580px] h-[270px] px-8 rounded-2xl flex flex-col space-y-5 justify-center items-center bg-gradient-to-br from-[#214077] to-transparent shadow-2xl">
           <Tabs
             aria-label="Options"
             selectedKey={text}
@@ -54,15 +54,24 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10 mb-6">
+      <div className="flex justify-center pt-10 pb-6 gap-10 px-32 bg-[#F0F5F8]">
         <City />
-        <div className="ml-4 flex flex-col justify-center">
-          <p className="text-center">
+        <div className="flex flex-col justify-center">
+          <p className="text-center text-2xl font-bold text-[#002F49]">
             Sign Up and apply to schools of your choice with a{" "}
-            <span className="font-semibold">Common Application Form</span>
+            <br />
+            <span className="font-semibold text-blue-700">Common Application Form</span>
           </p>
           <br />
-          <p className="text-center">
+          <div className="flex justify-center mb-5">
+            <Button className="bg-blue-500" color="default" href="#" variant="flat">
+              <span className="text-white font-semibold">
+                Sign Up
+              </span>
+            </Button>
+          </div>
+
+          <p className="text-center font-medium">
             We will help you discover the best schools for your child.
           </p>
         </div>

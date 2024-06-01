@@ -5,7 +5,6 @@ export default function CardTestimonial({name, image, text}: {name: string, imag
     <Card
       isBlurred
       className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
-      shadow="lg"
     >
       <CardBody>
         <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">

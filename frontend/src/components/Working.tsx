@@ -1,7 +1,7 @@
 const Working = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-10 m-20">
+      <div className="flex flex-col justify-center items-center gap-10 p-20 bg-[#F0F5F8]">
         <p className="text-3xl font-mono font-extrabold">
           How FormsDunia works
         </p>

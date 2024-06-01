@@ -2,7 +2,7 @@ import { Divider } from "@nextui-org/react"
 
 const Footer = () => {
   return (
-    <div className="bg-[#5182A0] bg-cover bg-bottom py-12">
+    <div className="bg-[#10203C] bg-cover bg-bottom py-12">
       <div className="flex flex-col p-10">
         <div className="flex flex-row justify-between items-center px-5">
           <div className="w-40">
