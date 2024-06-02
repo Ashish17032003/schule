@@ -7,7 +7,16 @@ import {
   Button,
 } from "@nextui-org/react";
 
+import { useNavigate } from "react-router-dom";
+
 const NavbarLanding = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/register');
+  };
+
   return (
     <>
       <Navbar
@@ -36,7 +45,7 @@ const NavbarLanding = () => {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem>
-            <Button className="bg-blue-500" as={Link} color="default" href="#" variant="flat">
+            <Button className="bg-blue-500" as={Link} color="default" variant="flat" onClick={handleClick}>
               <span className="text-white font-semibold">
                 Login
               </span>

@@ -3,6 +3,7 @@ import { Tabs, Tab } from "@nextui-org/react";
 import { SearchIcon } from "./SearchIcon";
 import { Key, useState } from "react";
 import City from "./City";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [text, setText] = useState("Day School");
@@ -64,10 +65,10 @@ const Body = () => {
           </p>
           <br />
           <div className="flex justify-center mb-5">
-            <Button className="bg-blue-500" color="default" href="#" variant="flat">
-              <span className="text-white font-semibold">
+            <Button className="bg-blue-500" color="default" href="register" variant="flat">
+              <Link to={'register'} className="text-white font-semibold">
                 Sign Up
-              </span>
+              </Link>
             </Button>
           </div>
 
